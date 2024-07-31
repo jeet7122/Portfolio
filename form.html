@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width intial scale = 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="formStyle.css">
+        <title>Contact Form</title>
+    </head>
+    <body>
+          <header>
+            <nav><div class="top"><h1>If you want to know about me!!</h1></div>
+                <div class="NAVBAR">
+                    <a class="link" href="about.html" id="nav">About</a>
+                    <a class="link" href="projects.html"id="nav">Projects</a>
+                    <a class="link" href="homepage.html" id="nav">Home</a>
+                </div>
+                </nav>
+        </header>
+        <div class="container">
+            <div class="column">
+                <form action="#" method="get">
+                    <h3>To learn more about my projects, please take just five minutes to fill out this form.</h3>
+                    <div class="form-elements">
+                        <label for="firstName">First name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First name" required>
+                        <label for="lastName">Last name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last name" required>
+                    </div>
+                    <div class="form-elements">
+                        <label for="phone">Contact number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[2-9]\d{2}-\d{3} \d{4}"  placeholder="(519)-981 7797" required>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2}" placeholder="abc@hotmail.com" required>
+                    </div>
+                    <div class="form-elements">
+                        <label for="Province">Select your Province:</label>
+                        <select id="Province" name="Province" required>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MN">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">New Foundland and Labrador</option>
+                            <option value="NT">North-West Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NN">Nunavat</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PEI">Prince Edward Island</option>
+                            <option value="QC">Quebec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YK">Yukon</option>
+                        </select>        
+                        <label for="Country">Country/Region:</label>
+                        <select id="Country" name="Country" required>
+                            <option value="US">America</option>
+                            <option value="BR">Brazil</option>
+                            <option value="CA">Canada</option>
+                            <option value="MX">Mexico</option>
+                            <option value="JP">Japan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="Submit"></label>
+                        <input type="submit" id="submit" name="submit" required>
+                    </div>
+                    <div class="link">
+                        <h2>Get Started</h2>
+                        <button id="1">Sign in with Google</button>
+                        <button id="2">Sign in with Facebook</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer id="footer">
+        <p class="footer">
+            All rights reserved for Jeet Thakkar,copyright &copy; 
+        </p>
+        <span class="foot">
+            <a href="homepage.html" class="pages">Home</a>
+            <a href="about.html" class="pages">About</a>
+            <a href="projects.html" class="pages">Projects</a>
+        </span>
+    </footer>
+</html>

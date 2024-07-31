@@ -1,0 +1,165 @@
+/*selectors used: body, h1, #nav, .top, .link, .container, .Home, img, h2, h3, footer, .footer, .foot, .pages */
+/*color code
+body: #fefae0;
+h1: #fefae0;
+#nav: #283618;
+hover: skyblue;
+#top: #dda15e;
+.container: #606c38;
+.Home: #dda15e;
+footer: #283618;
+*/
+/*body styles*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2;
+    background-color:#fefae0;
+
+}
+/*header styles*/
+h1{
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    color: #fefae0;
+
+}
+/*navigation bar styles(links)*/
+#nav{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    padding: 15px 25px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 39%;
+    height: fit-content;
+    text-decoration: none;
+    color: #283618;
+    transition: 0.3s color;
+}
+/*animation on hover*/
+#nav:hover{
+    text-decoration: underline;
+    color: skyblue;
+}
+
+.top{
+    background-color: #dda15e;
+}
+.link{
+    height: 70px;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin-top: 4%;
+    padding: 20px;
+    background-color: #606c38;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+.Home{
+    background-color:#dda15e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+img{
+    max-width: 100%;
+}
+h2, h3{
+    font-family: "Bona Nova SC", serif;
+    color: white;
+}
+footer {
+    background-color: #283618;
+    padding: 10px;
+    height: auto; /* Adjusted height to auto for better content fit */
+    display: flex;
+    justify-content: space-between; /* To evenly space out the content */
+    align-items: center;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    color: white; }
+
+.foot {
+    display: flex;
+    gap: 15px; }
+
+.pages {
+    text-decoration: none;
+    color: white;
+}
+.pages:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
+@media (max-width: 768px) {
+    .NAVBAR {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #nav {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .Home {
+        padding: 10px;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    h2, h3 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #nav {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .Home {
+        padding: 5px;
+    }
+
+    h2, h3 {
+        font-size: 16px;
+    }
+}
+
+
+    
